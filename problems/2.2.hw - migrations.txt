@@ -1,3 +1,5 @@
+== Part 1
+
 Design schema for 1 of :
 
 Blog
@@ -8,3 +10,15 @@ people can login and enter tasks, they can even create more than one list
 
 Family Tree
 tracking relatives, their relationships, married, birth, death, parent / child, etc
+
+== Part 2
+
+1. Add a new migration to rename one of your tables
+2. Add a new migration to rename one of the columns in one of your tables
+3. Add a new migration to add a column and delete a column from one of your tables
+
+== Part 3
+
+1. show me you running the rake command to clear the database
+2.                    "                    run your migrations
+3.                    "                    redo the last migration

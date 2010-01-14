@@ -1,0 +1,6 @@
+create and demo in script/console (or tests) one of each :
+
+1. belongs_to
+2. has_one
+3. has_many
+4. has_many :through

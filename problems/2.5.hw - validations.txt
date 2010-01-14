@@ -1,0 +1,6 @@
+show in script/console (or tests) one of each :
+
+1. validates_presence_of
+2. validates_uniqueness_of
+3. validates_length_of
+

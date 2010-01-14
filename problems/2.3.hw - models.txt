@@ -1,0 +1,11 @@
+= ActiveRecord creation
+
+1. how is create different from create!
+2. how is new different than create
+3. how is save different from save!
+4. how is build different from create
+
+= ActiveRecord lookup
+
+1. find a model by id
+2. find a model by name

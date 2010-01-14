@@ -14,7 +14,7 @@ test:
 
 
 
-# this has more examples, and uses
+# this has more environments, and uses references
 login: &login
   adapter: mysql
   host: localhost
