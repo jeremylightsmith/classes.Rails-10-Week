@@ -1,0 +1,47 @@
+# this is simple w/ sqlite
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  timeout: 5000
+  encoding: utf8
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  timeout: 5000
+  encoding: utf8
+
+
+
+
+# this has more examples, and uses
+login: &login
+  adapter: mysql
+  host: localhost
+  username: root
+  password: password
+  socket: /tmp/mysql.sock
+  
+development: &development
+  database: sso_dev
+  <<: *login
+
+test:
+  database: sso_test
+  <<: *login
+
+demo:
+  database: sso_demo
+  <<: *login
+
+selenium:
+  database: sso_selenium
+  <<: *login
+
+production:
+  adapter: mysql
+  database: sso_prod
+  username: root
+  password: password
+  host: 192.168.13.1
+

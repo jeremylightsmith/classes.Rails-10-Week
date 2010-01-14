@@ -1,0 +1,7 @@
+html = ""
+html += question == nil || question.empty? ? '' : '<h2>' + question + '</h2>'
+
+=>
+
+html = ""
+html += "<h2>#{question}</h2>" unless question.blank?

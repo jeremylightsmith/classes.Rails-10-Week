@@ -1,0 +1,7 @@
+Format the time to look like this :
+
+Jan 5, 8:58 PM
+
+notice no leading zeros, or spaces...
+
+how many different ways can you do it in rails

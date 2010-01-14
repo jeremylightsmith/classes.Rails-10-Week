@@ -1,0 +1,10 @@
+Design schema for 1 of :
+
+Blog
+has posts and comments written by me and other people, and I want to track them
+
+TaskList
+people can login and enter tasks, they can even create more than one list
+
+Family Tree
+tracking relatives, their relationships, married, birth, death, parent / child, etc
