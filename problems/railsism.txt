@@ -9,3 +9,11 @@ html += "<h2>#{question}</h2>" unless question.blank?
 
 
 implement a checkbox, what gets generated?  why?
+
+
+thickbox?
+
+
+before_filters / per controller / in application controller
+
+breadcrumbs

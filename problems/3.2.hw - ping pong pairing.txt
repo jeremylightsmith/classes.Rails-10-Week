@@ -1,0 +1,16 @@
+Either keep going on Roman Numerals OR Implement a Calculator
+
+on a calculator object, I would want to :
+- be able to "press" a key (a digit or operation, you can represent "keys" as "1", "2", "=", "+", "-")
+- it should handle +, -, *, /, etc
+
+Again, you don't have to finish.  The goal is to practice Red/Green/Refactor & Ping Pong Pairing.  
+
+Practice until you are comfortable and feel like you could do the following in ~ 3 minutes.  
+Feel free to try something, undo it, and show me the whole thing again.
+
+This is what I'll be looking for.
+
+* 2/3 rounds of ping pongs, it should take just a couple minutes
+* pick something that will have a refactoring aspect
+* explain to me what refactoring is

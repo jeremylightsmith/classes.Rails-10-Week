@@ -1,0 +1,4 @@
+Do any of the homeworks from the model class using Ping Pong Pairing.
+
+If you haven't done validations, that would be a good one to try (you'll get double credit if you haven't done it)
+

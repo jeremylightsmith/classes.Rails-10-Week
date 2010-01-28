@@ -1,0 +1,12 @@
+you won't be tested on this, but try :
+
+keep in mind, that what's important is HOW you do it, not that it WORKS.
+
+Roman Numerals
+
+Use red, green, refactor to implement a roman numeral reader.
+
+It should take something of the form "XII" and return the decimal equivalent, in this case 12.
+
+It should support I = 1, V = 5, X = 10, L = 50, it could support more.
+

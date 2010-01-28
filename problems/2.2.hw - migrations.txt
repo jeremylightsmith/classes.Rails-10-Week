@@ -1,6 +1,6 @@
 == Part 1
 
-Design schema for 1 of :
+Design 3 tables in the schema for 1 of :
 
 Blog
 has posts and comments written by me and other people, and I want to track them
