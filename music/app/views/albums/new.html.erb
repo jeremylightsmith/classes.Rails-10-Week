@@ -1,0 +1,15 @@
+<% form_for @album, :html => {:multipart => true} do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  
+  <p>
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
+  </p>
+
+  <%= f.submit "Create" %>
+<% end %>
+
+<%= link_to "all", albums_path %>

@@ -1,0 +1,10 @@
+<h1><%= @album.name %></h1>
+<p><%= link_to "edit", edit_album_path(@album) %></p>
+
+<p>
+  <%= image_tag @album.photo.url %>
+  <%= image_tag @album.photo.url(:medium) %>
+  <%= image_tag @album.photo.url(:thumb) %>
+</p>
+
+<%= link_to "all", albums_path %>

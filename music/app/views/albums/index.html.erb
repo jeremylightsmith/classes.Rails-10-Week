@@ -1,0 +1,5 @@
+<% @albums.each do |album| %>
+  <p><%= link_to album.name, album %></p>
+<% end %>
+
+<%= link_to "new album", new_album_path %>

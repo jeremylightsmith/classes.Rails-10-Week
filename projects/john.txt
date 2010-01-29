@@ -1,3 +1,0 @@
-A delicious-like app for storing and tagging bookmarks.
-
-It will probably have three tables: bookmarks, users, and tags, with a HABTM relationship between bookmarks and tags. 
