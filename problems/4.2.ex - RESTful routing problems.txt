@@ -4,19 +4,28 @@ Do so RESTfully!
 
 
 1. show artist w/ id 5
-
+"GET /artists/5"
+1.5. add an artist
+"POST /artists"
+params[:artist][:name]
+params[:artist][:genre]
+params[:artist][:label_id]
 2. show an album w/ id 6
 
 3. show all artists
-
+"GET /artists"
 4. show all albums
 
 5. login
-
+"GET /session/new"
+"POST /session"
+"GET /login"
+"POST /session"
 6. logout
+"DELETE /session"
 
 6. delete an artist
-
+"DELETE /artist/2"
 7. show all artists sorted by name
 
 8. show all artists sorted by genre
@@ -24,6 +33,9 @@ Do so RESTfully!
 9. have pretty urls, using artist names instead of ids
 
 10. show all albums for a particular artist
+"/albums?artist_id=5"
+"/artists/5/albums"
+"/artists/5/albums/3"
 
 11. show all tracks for an album
 
