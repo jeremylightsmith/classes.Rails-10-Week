@@ -1,0 +1,35 @@
+For each question, write the url (i.e. "/artists/24").  Build a routes.rb file that will satisfy all the questions:
+
+
+1. show artist w/ id 5
+
+2. show an album w/ id 6
+
+3. show all artists
+
+4. show all albums
+
+5. login
+
+6. logout
+
+6. delete an artist
+
+7. show all artists sorted by name
+
+8. show all artists sorted by genre
+
+9. have pretty urls, using artist names instead of ids
+
+10. show all albums for a particular artist
+
+11. show all tracks for an album
+
+12. add a track to an album
+
+13. have pretty urls, where ONLY artist names were used for url i.e. "http://mymusicsite.com/queen"
+
+14. have the root page of the site show all artists
+
+15. allow paging of artist page (what do the urls look like for page 1, page 2, page 3?)
+

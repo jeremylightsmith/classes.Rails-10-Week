@@ -1,0 +1,25 @@
+implement a RESTful controller / view (do all the parts, in any order that makes sense)
+
+== part 1 - Controller
+
+implement a RESTful Artists Controller in the music project (in github).  Use tests!
+
+it should :
+
+  * show a list of artists
+  * show a single artist
+  * create a new artist
+  * edit an artist
+  * update an artist
+  * delete an artist
+
+== part 2 - Views
+
+* implement the views to go with the controller
+* you should be able to navigate between each page
+
+== part 3 - Validation
+
+* implement some validations in the model
+* handle validations errors gracefully in the controller (use flash)
+* show validation errors on the view
