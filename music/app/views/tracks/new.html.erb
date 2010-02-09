@@ -1,0 +1,7 @@
+<% form_for @track do |f| %>
+  <%= error_messages_for :track %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  
+  <%= f.submit "Submit" %>
+<% end %>
