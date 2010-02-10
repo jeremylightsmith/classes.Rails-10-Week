@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(:version => 20100129082701) do
   create_table "albums", :force => true do |t|
     t.string   "name"
     t.integer  "artist_id"
+    t.date     "release_date"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "photo_file_name"
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20100129082701) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
+    t.string   "genre"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

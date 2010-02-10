@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.album .breadcrumbs {
+  margin: 20px 0;
+}
+
+.album .album_image {
+  float: left;
+  width: 150px;
+}
+
+.album .about {
+  margin-left: 170px;
+}
+
+.album .about h1 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.album .tracks {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+}
+
+.album .tracks th {
+  background-color: #E0E7EE;
+  border: solid 1px silver;
+  padding: 5px 10px;
+}
+
+.album .tracks td {
+  border: solid 1px silver;
+  padding: 5px 10px;
+}
+
+.album .tracks .number {
+  width: 2em;
+  text-align: right;
+}

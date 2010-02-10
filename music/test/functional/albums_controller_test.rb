@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class AlbumsControllerTest < ActionController::TestCase
+  def setup
+    @artist = Artist.create!(:name => "Led Zeppelin")
+  end
+  
   test "should show an album" do
-    album = Album.create!(:name => "Ocean Eyes")
+    album = @artist.albums.create!(:name => "Ocean Eyes")
     
     get :show, :id => album.to_param
     
@@ -11,13 +15,23 @@ class AlbumsControllerTest < ActionController::TestCase
   end
   
   test "show all albums" do
-    one = Album.create!(:name => "One")
-    two = Album.create!(:name => "Two")
+    one = @artist.albums.create!(:name => "One")
+    two = @artist.albums.create!(:name => "Two")
     
     get :index
     
     assert_response :success, @response.body
     assert_equal [one, two], assigns(:albums)
+  end
+  
+  test "return json when we get a js request" do
+    one = @artist.albums.create!(:name => "One")
+    two = @artist.albums.create!(:name => "Two")
+    
+    get :index, :format => "js"
+    
+    assert_response :success, @response.body
+    assert_equal [one, two].to_json, @response.body
   end
   
   test "create an album" do
@@ -37,7 +51,7 @@ class AlbumsControllerTest < ActionController::TestCase
   end
   
   test "show an edit album page" do
-    album = Album.create!(:name => "foo")
+    album = @artist.albums.create!(:name => "foo")
     
     get :edit, :id => album.to_param
     
@@ -46,7 +60,7 @@ class AlbumsControllerTest < ActionController::TestCase
   end
 
   test "update an album" do
-    album = Album.create!(:name => "bar")
+    album = @artist.albums.create!(:name => "bar")
 
     put :update, :id => album.to_param, :album => {:name => "baz"}
     
@@ -56,11 +70,11 @@ class AlbumsControllerTest < ActionController::TestCase
   end
   
   test "delete an album" do
-    album = Album.create!(:name => "foo")
+    album = @artist.albums.create!(:name => "foo")
     
     delete :destroy, :id => album
     
     assert_redirected_to albums_path
-    assert !Album.exists?(album)
+    assert !@artist.albums.exists?(album)
   end
 end

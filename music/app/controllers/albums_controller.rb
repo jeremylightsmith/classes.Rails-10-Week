@@ -5,6 +5,14 @@ class AlbumsController < ApplicationController
   
   def index
     @albums = Album.find(:all)
+    respond_to do |wants|
+      wants.html do
+        render
+      end
+      wants.js do
+        render :json => @albums.to_json
+      end
+    end
   end
   
   def new

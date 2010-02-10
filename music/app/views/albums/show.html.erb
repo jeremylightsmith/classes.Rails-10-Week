@@ -1,10 +1,27 @@
-<h1><%= @album.name %></h1>
-<p><%= link_to "edit", edit_album_path(@album) %></p>
-
-<p>
-  <%#= image_tag @album.photo.url %>
-  <%#= image_tag @album.photo.url(:medium) %>
-  <%#= image_tag @album.photo.url(:thumb) %>
-</p>
-
-<%= link_to "all", albums_path %>
+<div class="album">
+  <div class="breadcrumbs">
+    <%= link_to "Music", "/" %> >
+    <%= link_to @album.artist.genre, "#" %> >
+    <%= link_to @album.artist.name, @album.artist %>
+  </div>
+  <%= image_tag @album.photo.url, :class => "album_image" %>
+  <div class="about">
+    <h1><%= @album.name %> <%= link_to "edit", edit_album_path(@album) %></h1>
+    <h2>Album Review</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    
+    <table class="tracks">
+      <tr>
+        <th></th>
+        <th>Name</th>
+      </tr>
+      <% @album.tracks.each do |track| %>
+        <tr>
+          <td class="number"><%= track.number %></td>
+          <td class="name"><%= track.name %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
