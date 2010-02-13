@@ -4,7 +4,7 @@
     <%= link_to @album.artist.genre, "#" %> >
     <%= link_to @album.artist.name, @album.artist %>
   </div>
-  <%= image_tag @album.photo.url, :class => "album_image" %>
+  <%= image_tag @album.photo.url(:medium), :class => "album_image" %>
   <div class="about">
     <h1><%= @album.name %> <%= link_to "edit", edit_album_path(@album) %></h1>
     <h2>Album Review</h2>
