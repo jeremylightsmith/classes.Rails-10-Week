@@ -1,0 +1,41 @@
+
+STORY 6-1:
+I would like to upload artist images that are displayed after being resized appropriately.
+
+1) Make sure paperclip and image magick are installed and working.  You should be able to test this using the current version of the music example and the album edit & show pages.
+2) Allow the user to upload a photo for the artist.  Display whatever image the user uploads.  
+3) Resize the photo to 2 sizes, 450 x 450 pixels, also create a thumbnail size of 75 x 75 pixels.
+4) Display the 450x450 image in the artists/show page, and display the 75x75 image on the artist index page
+
+Note: Build this on top of the music example that you currently have running.  The code checked into github shows how to do this for the album.
+
+You'll have to read the paperclip documentation to learn what you need to do.  
+see http://github.com/thoughtbot/paperclip
+
+STORY 6-2:
+I would like you to tell me what acts_as_soft_deletable does.
+see http://www.railslodge.com/plugins/1037-acts-as-soft-deletable
+
+STORY 6-3:
+As a new user to your site, I would like to sign up for your site.  
+
+1) Have a signup button on the top of each page that takes you to the users/new page. 
+2) By entering my name, email, and password, it should create a user for me.
+3) When I say "every" page, that means that you probably want this in your application layout.  
+
+STORY 6-4:
+As a user that has already signed up to your site, I would like to login & logout using the email & password that I created.
+
+1) When I'm not logged in, I should see a login & signup link at the top.  When I am logged in, I should see a logout link at the top.
+2) The login link should take me to session/new, the logout link should take me to session/destroy
+3) Upon logging in, you should save the logged in user's user_id in the session.
+4) Upon logging out, you should delete the logged in user's user_id from the session.
+5) In a before_filter, you should always check to see if a user is already logged in, and if so, make the logged in user available to all your controllers and views with a helper method called "current_user".
+6) Using this helper method, you should be able to display login / signup in one case, and logout in the other case.
+
+Note: For now, go ahead and store the password as regular text.  In a production app NEVER EVER EVER do this.  
+
+STORY 6-5:
+I would like to get feedback on what happened when logging in, signing up, and logging out.
+
+1) Use the flash to display a note about what happened.  e.g. User created, Successful login, Couldn't find user / password, etc.
