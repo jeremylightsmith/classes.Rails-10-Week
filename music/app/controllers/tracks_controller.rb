@@ -1,6 +1,14 @@
 class TracksController < ApplicationController
   def index
-    @tracks = Track.all
+    @tracks = Track.find(:all, :order => params[:order])
+    respond_to do |wants|
+      wants.html do
+        render
+      end
+      wants.js do
+        render :layout => false
+      end
+    end
   end
   
   def show
@@ -17,6 +25,15 @@ class TracksController < ApplicationController
       redirect_to @track
     else
       render :new
+    end
+  end
+  
+  def destroy
+    @track = Track.find(params[:id])
+    @track.destroy
+    
+    render :update do |page|
+      page << "$('#track_#{@track.id}').remove()"
     end
   end
 end

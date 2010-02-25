@@ -1,0 +1,15 @@
+Back to your music example...
+
+STORY 7-1:
+I would like to do a sort without my browser having to refresh.
+
+- use remote_form_tag / remote_form_for instead the form you used for for the sort.
+  - what url should this go to?
+- replace the old list of albums with what you get back from the server.
+- on the server side use a respond_to to make sure that you don't include a layout when being asked for js
+
+STORY 7-2:
+I would like to delete an album from the artist page and have the artist disappear from the page without the page reloading.
+
+- use a link_to_remote tag
+- in your controller use inline rjs to delete the album

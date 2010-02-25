@@ -1,0 +1,14 @@
+<table class="tracks">
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th></th>
+  </tr>
+  <% tracks.each do |track| %>
+    <tr id="track_<%= track.id %>">
+      <td class="number"><%= track.number %></td>
+      <td class="name"><%= track.name %></td>
+      <td class="actions"><%= link_to_remote "delete", :url => track_path(track), :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>

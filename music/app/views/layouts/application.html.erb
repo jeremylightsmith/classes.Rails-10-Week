@@ -3,9 +3,13 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>Your Music</title>
   <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "jquery", "application" %>
 </head>
 <body>
   <div class="content">
+    <div class="header">
+      <h1>My Awesome Music</h1>
+    </div>
     <%= yield %>
   </div>
 </body>
