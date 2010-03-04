@@ -1,0 +1,6 @@
+<% form_for :message, :url => messages_path do |f| %>
+  <%= f.label :recipient, "To:" %>
+  <%= f.text_field :to %>
+  
+  <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+<% end %>

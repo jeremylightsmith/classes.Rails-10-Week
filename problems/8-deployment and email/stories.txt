@@ -1,0 +1,10 @@
+STORY 8-1:
+Create your own "mail" project just like the one I created on github.  It should have the same behavior.  Deploy it to Heroku.
+
+- go to http://heroku.com/ and sign up for an account
+- ...
+
+STORY 8-2:
+Change the mail project to send a "hello" message that uses the user's name.  Get it from the form and send it instead of the test message.
+
+- ...
