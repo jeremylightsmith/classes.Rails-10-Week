@@ -1,10 +1,31 @@
 STORY 8-1:
 Create your own "mail" project just like the one I created on github.  It should have the same behavior.  Deploy it to Heroku.
 
-- go to http://heroku.com/ and sign up for an account
-- ...
+- create your rails project and get it working locally
+- create a git repo
+  - git init
+  - git add .
+  - git commit -m "initial checkin"
+- create a heroku project
+  - go to http://heroku.com/ and sign up for an account
+  - sudo gem install heroku
+  - heroku create <yourname>-mail
+    - you'll have to enter your heroku credentials
+- push to heroku
+  - git push heroku master
+- you should see it now at : <yourname>-mail.heroku.com
+
+- configure heroku to be able to send e-mails
+  - add the send grid add-on through the ui
+- you should now be able to send yourself an e-mail
 
 STORY 8-2:
 Change the mail project to send a "hello" message that uses the user's name.  Get it from the form and send it instead of the test message.
 
 - ...
+
+STORY 8-3: (optional)
+Deploy your music application to Heroku.
+
+STORY 8-4: (optional)
+Get your music application to email a welcome message to the user when they signup.
